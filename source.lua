@@ -32,7 +32,7 @@ LocalPLRSection:NewSlider("Jumppower", "brrrrrrrrr", 500, 0, function(s) -- 500 
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-LocalPLRSection:NewButton("ButtonText", "ButtonInfo", function()
+LocalPLRSection:NewButton("Fly", "VROOOOOOOOOOOOOOOOOOm", function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/RkUtdYb0'), true))()
 end)
 
