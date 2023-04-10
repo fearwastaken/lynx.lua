@@ -2,10 +2,17 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("lynx.lua", "DarkTheme")
 
 
+local MainTab = Window:NewTab("Dashboard")
+local MainSection = UniversalTab:NewSection("Dashboard")
 local UniversalTab = Window:NewTab("Universal")
 local UniversalSection = UniversalTab:NewSection("Universal")
 local LocalPlayerTab = Window:NewTab("LocalPlayer")
 local LocalPLRSection = LocalPlayerTab:NewSection("LocalPlayer")
+
+--dashboard
+
+MainSection:NewLabel("Welcome! Thanks for using lynx.lua, start going to universal to begin.")
+MainSection:NewLabel("You should also try out the serverside it is great!")
 
 --universal scripts
 
@@ -32,7 +39,7 @@ LocalPLRSection:NewSlider("Jumppower", "brrrrrrrrr", 500, 0, function(s) -- 500 
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-LocalPLRSection:NewButton("Fly", "VROOOOOOOOOOOOOOOOOOm", function()
+LocalPLRSection:NewButton("Fly", "vroooooooom", function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/RkUtdYb0'), true))()
 end)
 
